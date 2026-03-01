@@ -627,6 +627,7 @@ footer {
       <li><a href="#corpus">Corpus</a></li>
       <li><a href="#patents">Patents</a></li>
       <li><a href="#model">Model</a></li>
+      <li><a href="#pilot">Pilot</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -647,10 +648,14 @@ footer {
     </p>
     <div class="hero-meta">
       <div class="meta-chip gold">Patent Pending — US 63/835,655</div>
-      <div class="meta-chip active">SSAF Framework — 5 DOIs</div>
+      <div class="meta-chip active">SSAF Framework — 6 DOIs</div>
       <div class="meta-chip">CISA Disclosed</div>
       <div class="meta-chip">MITRE Disclosed</div>
       <div class="meta-chip">Northport, Alabama</div>
+    </div>
+    <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+      <a href="#corpus" style="font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:14px 28px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;transition:opacity .2s" onmouseover="this.style.opacity='.8'" onmouseout="this.style.opacity='1'">View Research Corpus →</a>
+      <a href="mailto:dustin@nextaitrust.com?subject=Pilot%20Inquiry%20—%20Quantum%20Aegis" style="font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;padding:14px 28px;background:none;border:1px solid var(--border-hi);color:var(--bright);text-decoration:none;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border-hi)'">Request Pilot Partnership →</a>
     </div>
   </section>
 </div>
@@ -729,9 +734,10 @@ footer {
       </div>
       <h2 class="section-title reveal">Published Record</h2>
       <p class="section-intro reveal">
-        Five peer-deposited publications on Zenodo establishing the complete
+        Six peer-deposited publications on Zenodo establishing the complete
         SSAF theoretical framework, empirical validation, and distillation
-        attack extension. All publications are open access.
+        attack extension. Includes empirical proof-of-concept: 2,176 detection cycles,
+        94.7% confidence, consumer hardware. All publications are open access.
       </p>
 
       <div class="corpus-list reveal">
@@ -784,6 +790,16 @@ footer {
             <div class="ci-doi">DOI: 10.5281/zenodo.18779678</div>
           </div>
           <div class="ci-badge extension">Final — Feb 2026</div>
+        </a>
+
+        <a class="corpus-item" href="https://doi.org/10.5281/zenodo.18797674" target="_blank" rel="noopener">
+          <div class="ci-num">06</div>
+          <div class="ci-body">
+            <div class="ci-title">Continuous Online Knowledge Distillation with Adaptive Curriculum Generation — Empirical Study</div>
+            <div class="ci-meta">James, D. T. — March 2026 — Zenodo</div>
+            <div class="ci-doi">DOI: 10.5281/zenodo.18797674</div>
+          </div>
+          <div class="ci-badge primary">Empirical Proof — 2,176 Cycles</div>
         </a>
 
       </div>
@@ -876,12 +892,58 @@ footer {
   </div>
 </div>
 
+<!-- PILOT -->
+<div id="pilot" style="background:var(--surface-hi,#111)">
+  <div class="container">
+    <section>
+      <div class="rule reveal">
+        <span class="rule-label">05 — Pilot Partnership</span>
+        <div class="rule-line"></div>
+      </div>
+      <h2 class="section-title reveal">30-Day Parallel Pilot</h2>
+      <p class="section-intro reveal">
+        No procurement. No displacement of existing systems. Run Quantum Aegis
+        alongside your current fraud or security stack for 30 days.
+        At the end, compare the timestamps. Our detection window opens earlier —
+        at the behavioral attribution layer, before the attack completes.
+        That is not a claim. It is a measurement.
+      </p>
+      <div class="framework-grid reveal" style="margin-top:32px">
+        <div class="framework-cell">
+          <div class="fc-num">FINANCIAL</div>
+          <div class="fc-title">Banks &amp; Credit Unions</div>
+          <div class="fc-desc">False positive reduction, GDPR Art.22 explainability, ZK-proof audit trail for examiner compliance. Detects fraud before funds leave your control.</div>
+          <div class="fc-tag ok">Fraud Prevention</div>
+        </div>
+        <div class="framework-cell">
+          <div class="fc-num">HEALTHCARE</div>
+          <div class="fc-title">Regional Health Systems</div>
+          <div class="fc-desc">HIPAA-compliant behavioral access monitoring. Detects credential-based lateral movement — the attack vector preceding ransomware — at session initiation, not post-breach.</div>
+          <div class="fc-tag gold">Ransomware Defense</div>
+        </div>
+        <div class="framework-cell">
+          <div class="fc-num">GOVERNMENT</div>
+          <div class="fc-title">Defense &amp; Critical Infrastructure</div>
+          <div class="fc-desc">NIST 800-53 aligned, air-gap capable, CNSA Suite 2.0 cryptography. SSAF detection for insider threat and adversarial AI attribution attacks. SBIR-eligible.</div>
+          <div class="fc-tag warn">SBIR Eligible</div>
+        </div>
+        <div class="framework-cell">
+          <div class="fc-num">UTILITY</div>
+          <div class="fc-title">Energy &amp; Water Infrastructure</div>
+          <div class="fc-desc">Zero latency to control plane. Passive monitoring at the identity layer. Detects compromised vendor sessions and anomalous OT access before operational impact.</div>
+          <div class="fc-tag warn">NERC CIP Aligned</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
 <!-- CONTACT -->
 <div id="contact">
   <div class="container">
     <section>
       <div class="rule reveal">
-        <span class="rule-label">05 — Contact</span>
+        <span class="rule-label">06 — Contact</span>
         <div class="rule-line"></div>
       </div>
       <h2 class="section-title reveal">Dustin Tyler James</h2>
@@ -895,8 +957,8 @@ footer {
         <div class="contact-cell">
           <div class="cc-label">Research Correspondence</div>
           <div class="cc-value">
-            <a href="mailto:QuantumAegisdefense@gmail.com" class="cc-link">
-              QuantumAegisdefense@gmail.com
+            <a href="/cdn-cgi/l/email-protection#81d0f4e0eff5f4ecc0e4e6e8f2e5e4e7e4eff2e4c1e6ece0e8edafe2eeec" class="cc-link">
+              <span class="__cf_email__" data-cfemail="99c8ecf8f7edecf4d8fcfef0eafdfcfffcf7eafcd9fef4f8f0f5b7faf6f4">[email&#160;protected]</span>
             </a>
           </div>
           <div class="cc-note">
@@ -956,7 +1018,7 @@ footer {
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── SCROLL REVEAL ──
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
@@ -987,13 +1049,4 @@ function copyCmd() {
 }
 
 // ── SMOOTH SCROLL ──
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-</script>
-</body>
-</html>
+document.querySelectorAll('a[href^="#
